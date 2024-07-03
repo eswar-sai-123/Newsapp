@@ -33,8 +33,8 @@ def news(lang,topic,max_number_of_topic,loca):
     return "\n".join(li_st) 
 
 def send_email(lis,email_to):
-    from_email = "20je0672@ap.iitism.ac.in"
-    from_password = "123456789"
+    from_email = "xxxxxx"
+    from_password = "xxxxxx"
 
     messsage = MIMEMultipart()
     messsage["From"] = from_email 
