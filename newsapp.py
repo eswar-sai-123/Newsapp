@@ -11,7 +11,7 @@ from_email = os.getenv("EMAIL_ADDRESS")
 from_password = os.getenv("EMAIL_PASSWORD")
 
 st.title(""" Top News directly to your Email""")
-language = st.selectbox('Select language:', ['telugu','english', 'hindi', 'french'])
+language = st.selectbox('Select language:', ['telugu','english', 'hindi','tamil','kannada'])
 topic = st.selectbox('Select topic:', ['world', 'nation', 'business', 'technology', 'entertainment', 'sports', 'science'])
 num_of_news = st.number_input("Enter Number of news")
 location = st.selectbox("Enter the location",["India", "USA","Russia"])
