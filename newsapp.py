@@ -45,7 +45,7 @@ def send_email(lis,email_to):
     messsage["To"]   = email_to
     messsage["Subject"] = "Top Stories"
 
-    body = lis
+    body = "/n".join(lis)
     messsage.attach(MIMEText(body, 'plain'))
     
     server = smtplib.SMTP('smtp.gmail.com', 587)
